@@ -1,7 +1,12 @@
-export default function Gallery() {
+import { stageImages } from "../data/gallery";
+
+export default function Gallery({ gallery }: Props) {
   return (
-    <main>
-      <h1>Markus Christensen</h1>
-    </main>
+    <div>
+      <h2>Scenbilder</h2>
+      {stageImages.map((img, index) => (
+        <img key={index} src={img} alt="Scenbilder" width="100" />
+      ))}
+    </div>
   );
 }
