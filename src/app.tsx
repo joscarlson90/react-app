@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router";
-import { mockedPerformance } from "./data/performances";
+import { stageImages } from "./data/gallery";
+import { mockedPerformance } from "./data/work";
 import About from "./pages/about";
 import Gallery from "./pages/gallery";
 import Home from "./pages/home";
@@ -8,16 +9,18 @@ import Layout from "./pages/layout";
 import Work from "./pages/work";
 
 export default function App() {
-  const [work, setWork] = useState(mockedPerformance);
+  const [gallery] = useState(stageImages);
+  const [work] = useState(mockedPerformance);
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout />} />
-        <Route index element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/gallery" element={<Gallery />} />
+        <Route element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="work" element={<Work work={work} />} />
+          <Route path="gallery" element={<Gallery gallery={gallery} />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
