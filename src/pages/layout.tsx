@@ -18,6 +18,11 @@ export default function Layout() {
         </div>
       </header>
       <Outlet />
+      <footer className="font-thin">
+        <div className="flex items-center justify-center h-30 text-sm gap-5 p-5 border-t bg-stone-200">
+          <div className="text-center">© Josefine Carlson</div>
+        </div>
+      </footer>
     </>
   );
 }
