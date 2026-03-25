@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { workData } from "../data/work";
 
-export default function Work({ work }: Props) {
-  const [musicals] = useState(mockedPerformance);
+export default function Work() {
+  const work = workData;
+
   return (
     <div>
       <h2>Performance</h2>
