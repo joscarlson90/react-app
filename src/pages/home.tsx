@@ -5,10 +5,11 @@ export default function Home() {
 
   return (
     <section
-      className="bg-cover h-screen w-150 bg-center flex items-center justify-center"
+      className="bg-[length:40%] bg-no-repeat h-screen w-full bg-right flex items-center justify-around"
       style={{ backgroundImage: `url(${heroImg?.src})` }}
     >
-      <h1></h1>
+      <h2 className="text-3xl font-thin italic">Sångare & Skådespelare</h2>
+      <div></div>
     </section>
   );
 }
