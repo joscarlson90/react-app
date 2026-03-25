@@ -7,7 +7,7 @@ const hidden = [
   stageImages.young,
 ];
 
-export default function Gallery({ gallery }: Props) {
+export default function Gallery({}) {
   return (
     <div className="columns-1 sm:columns-2 md:columns-3 gap-4 p-6">
       {Object.values(stageImages)
