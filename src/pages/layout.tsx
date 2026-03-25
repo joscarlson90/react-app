@@ -9,9 +9,10 @@ export default function Layout() {
             Markus Christensen
             <div className="flex text-base gap-5 p-5">
               <Link to="/">HEM</Link>
-              <Link to="/">OM MIG</Link>
-              <Link to="">CV</Link>
-              <Link to="/">MEDIA</Link>
+              <Link to="/about">OM MIG</Link>
+              <Link to="/work">CV</Link>
+              <Link to="/gallery">MEDIA</Link>
+              <Link to="/contact">KONTAKT</Link>
             </div>
           </h1>
         </div>
