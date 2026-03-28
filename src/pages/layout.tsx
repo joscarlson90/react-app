@@ -7,7 +7,7 @@ export default function Layout() {
         <div className="flex flex-col items-center justify-between text-4xl p-5 pl-10 border-b-3 border-red-800 bg-stone-200 md:justify-between">
           <h1 className="text">Markus Christensen</h1>
           <h2 className=" block md:hidden text-xl">
-            Sångare & Skådespelare
+            Sångare - Skådespelare - Musiker
           </h2>
           <div className="flex flex-row flex-wrap text-base gap-5 p-4">
             <Link to="/">HEM</Link>
