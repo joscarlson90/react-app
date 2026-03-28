@@ -5,6 +5,8 @@ const hidden = [
   stageImages.profil,
   stageImages.profil2,
   stageImages.young,
+  stageImages.oliver2,
+  stageImages.zjivago
 ];
 
 export default function Gallery({}) {
@@ -17,7 +19,7 @@ export default function Gallery({}) {
             key={img.src}
             src={img.src}
             alt="Scenbilder"
-            className="mb-4 w-full hover:opacity-90 transition w-m h-auto"
+            className="mb-4 w-full hover:opacity-90 transition w-m h-auto rounded-md"
           />
         ))}
     </div>
