@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="max-w-2xl mx-auto p-10 rounded-3xl border border-black/10 bg-white shadow-lg">
+    <div className="max-w-2xl mx-auto p-10 rounded-md border border-black/10 bg-white shadow-lg">
       <h2 className="text-3xl w-fit pb-6">Kontakta mig</h2>
       <div className="flex pb-8 items-center gap-4">
         <svg
