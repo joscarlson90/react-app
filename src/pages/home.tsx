@@ -9,9 +9,7 @@ export default function Home() {
         <h2 className="mt-50 mb-5 text-2xl font-thin md:text-4xl">
           Sångare, Skådespelare & Musiker
         </h2>
-        <h3 className="w-auto font-light">
-          hejhej
-        </h3>
+        <h3 className="w-auto font-light"></h3>
       </article>
 
       <div className="w-full md:w-1/2 lg:w-2/5 md:ml-auto">
