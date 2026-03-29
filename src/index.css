@@ -2,5 +2,6 @@
 
 html, body, #root {
   font-family: "Quicksand", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-weight: 100;
   min-height: 100%;
 }
