@@ -4,12 +4,14 @@ export default function Work() {
   const work = workData;
 
   return (
-    <div className="px-6 py-10">
+    <div className="px-6">
       <h3 className="text-2xl ml-10 mt-10 font-thin">SCEN</h3>
-
       <div className="flex flex-col mr-10">
         {work.map((item) => (
-          <div className="grid grid-cols-2 my-6 ml-10 font-thin md:grid-cols-3" key={item.id}>
+          <div
+            className="grid grid-cols-2 my-6 ml-10 font-thin md:grid-cols-3"
+            key={item.id}
+          >
             <p className="text-xl italic">{item.year}</p>
             <div className="flex flex-col align-center w-auto">
               <p className="font-normal mb-3 md:text-xl">
