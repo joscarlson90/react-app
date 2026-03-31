@@ -3,10 +3,10 @@ import { Link, Outlet } from "react-router";
 export default function Layout() {
   return (
     <div className="min-h-screen flex flex-col font-(family-name:<Quicksand>)">
-      <header className="font-thin z-10 relative">
-        <div className="flex flex-col items-center justify-between text-4xl p-5 pl-10 border-b-3 border-red-800 bg-stone-200 md:justify-between">
-          <h1 className="text">Markus Christensen</h1>
-          <h2 className="block md:hidden text-lg p-3">
+      <header className="font-thin z-10">
+        <div className="flex flex-col items-center justify-between text-4xl p-5 border-b-3 border-red-800 bg-stone-200 md:justify-between md:p-10">
+          <h1 className="text text-xl font-bold md:font-thin md:text-4xl">Markus Christensen</h1>
+          <h2 className="block md:hidden text-sm p-3">
             Sångare - Skådespelare - Musiker
           </h2>
           <div className="flex flex-row flex-wrap text-base gap-5 md:pt-3">
@@ -44,7 +44,7 @@ export default function Layout() {
         </div>
       </header>
 
-      <main className="flex-1 flex items-center justify-center">
+      <main className="flex flex-1 w-full h-full justify-center">
         <Outlet />
       </main>
 

@@ -12,14 +12,14 @@ export default function Work() {
             className="grid grid-cols-2 my-6 ml-10 font-thin md:grid-cols-3"
             key={item.id}
           >
-            <p className="text-xl italic">{item.year}</p>
+            <p className="md:text-xl italic">{item.year}</p>
             <div className="flex flex-col align-center w-auto">
               <p className="font-semibold mb-3 md:text-xl">
                 {item.workplace} | {item.name}
               </p>
               <p className="hidden md:block">{item.about}</p>
             </div>
-            <div className="md:flex md:justify-center hidden md:block">
+            <div className="md:flex md:justify-center hidden">
               <img
                 className="w-80 rounded-md"
                 src={item.imageUrl}
@@ -43,7 +43,7 @@ export default function Work() {
               </p>
               <p className="hidden md:block">OM</p>
             </div>
-            <div className="md:flex md:justify-center hidden md:block">
+            <div className="md:flex md:justify-center hidden">
               <img className="w-80 rounded-md" src={""} alt={"ALTTEXT"} />
             </div>
           </div>
