@@ -18,6 +18,7 @@ import svala from "../assets/svala.png";
 import tummelisa from "../assets/tummelisa.webp";
 import young from "../assets/young-markus.png";
 import zjivago from "../assets/zjivago.jpg";
+import borje from "../assets/borjefilm.jpg";
 
 export const stageImages = {
   grandhotel: { src: grandhotel, inGallery: true },
@@ -40,4 +41,5 @@ export const stageImages = {
   somethingrotten3: { src: somethingrotten3, inGallery: true },
   somethingrotten4: { src: somethingrotten4, inGallery: true },
   loveyou: { src: loveyou, inGallery: true },
+  borje: {src: borje, inGallery: true},
 };
