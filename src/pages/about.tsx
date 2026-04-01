@@ -7,12 +7,7 @@ export default function About() {
     <main className="ml-10 mr-10 mb-10 font-thin">
       <h3 className="text-2xl w-fit pb-4 pt-4">VEM ÄR JAG?</h3>
       <section>
-        <p className="flex flex-col float-right md:flex-row-reverse">
-          <img
-            src={youngImage.src}
-            alt="Scenbild"
-            className="rounded-md md:ml-6 m-2 md:w-100 md:h-auto"
-          />
+        <p className="flex flex-col md:flex-row-reverse gap-6 items-start">
           - Jag vill bli Spiderman när jag blir stor! <br />
           Andrahandsval tennisproffs. Det blir inte alltid som man tänkt sig.
           När jag upptäckte musiken - alltså musik som var mer än Smurfhits och
@@ -31,6 +26,11 @@ export default function About() {
           (ja, jag sa det - Kungälvs bästa krogar) till att spela
           lustspelsoperett på Göteborgsoperan kan jag med stolthet definiera mig
           som mångsysslare inom musik och teater.
+          <img
+            src={youngImage.src}
+            alt="Scenbild"
+            className="rounded-md md:ml-6 m-2 w-full max-w-[300px] md:max-w-[400px] h-auto"
+          />
         </p>
         {/* <p className="h-auto w-auto md:w-1/2 lg:w-2/5 md:ml-auto"></p> */}
       </section>
