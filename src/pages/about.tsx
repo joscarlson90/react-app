@@ -4,8 +4,8 @@ export default function About() {
   const youngImage = stageImages.young;
 
   return (
-    <main className="ml-10 mr-10 mb-10 font-thin">
-      <h3 className="text-2xl w-fit pb-4 pt-4">VEM ÄR JAG?</h3>
+    <main className="px-8 font-thin">
+      <h3 className="text-2xl ml-10 mt-10 mb-10">VEM ÄR JAG?</h3>
       <section>
         <p className="flex flex-col md:flex-row-reverse gap-6 items-start">
           - Jag vill bli Spiderman när jag blir stor! <br />

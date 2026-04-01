@@ -5,7 +5,9 @@ export default function Layout() {
     <div className="min-h-screen flex flex-col font-(family-name:<Quicksand>)">
       <header className="font-thin z-10">
         <div className="flex flex-col items-center justify-between text-4xl p-5 border-b-4 border-red-800 bg-stone-200 md:justify-between md:p-10">
-          <h1 className="text text-xl font-bold md:font-thin md:text-4xl">Markus Christensen</h1>
+          <h1 className="text text-xl font-bold md:font-thin md:text-4xl">
+            Markus Christensen
+          </h1>
           <h2 className="block md:hidden text-sm p-3">
             Sångare - Skådespelare - Musiker
           </h2>
@@ -49,7 +51,7 @@ export default function Layout() {
       </main>
 
       <footer className="font-thin">
-        <div className="flex flex-col items-center justify-center h-30 text-sm gap-5 p-5 border-t-4 border-red-800 bg-stone-200">
+        <div className="flex flex-col items-center justify-center h-30 text-sm gap-2 border-t-4 border-red-800 bg-stone-200">
           <div className="text-center">© 2026 Markus Christensen</div>
           <div className="flex justify-center">
             <a href="https://www.instagram.com/mackisen?igsh=OGQ1NXI5ZGR6NTlm">
@@ -85,6 +87,9 @@ export default function Layout() {
                 />
               </svg>
             </a>
+          </div>
+          <div className="text-center italic text-xs">
+            Design by Josefine Carlson
           </div>
         </div>
       </footer>
