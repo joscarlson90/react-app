@@ -9,7 +9,7 @@ export default function Work() {
       <div className="flex flex-col">
         {work.map((item) => (
           <div
-            className="grid grid-cols-2 my-6 ml-4 font-thin md:grid-cols-3"
+            className="grid grid-cols-1 m-6 font-thin md:grid-cols-3 md:gap-2"
             key={item.id}
           >
             <p className="md:text-xl italic">{item.year}</p>
@@ -19,9 +19,10 @@ export default function Work() {
               </p>
               <p className="hidden md:block">{item.about}</p>
             </div>
-            <div className="md:flex md:justify-center hidden">
+
+            <div className="md:flex md:items-start md:justify-end rounded-md overflow-hidden">
               <img
-                className="w-80 rounded-md"
+                className="w-full h-auto object-contain rounded-md"
                 src={item.imageUrl}
                 alt={item.name}
               />
