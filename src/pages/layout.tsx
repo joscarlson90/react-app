@@ -1,17 +1,25 @@
+import { useState } from "react";
 import { Link, Outlet } from "react-router";
 
 export default function Layout() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="min-h-screen flex flex-col font-(family-name:<Quicksand>)">
-      <header className="font-thin z-10">
-        <div className="flex flex-col items-center justify-between text-4xl p-5 border-b-4 border-red-800 bg-stone-200 md:justify-between md:p-10">
-          <h1 className="text text-xl font-bold md:font-thin md:text-4xl">
+      <header className="font-thin z-10 bg-stone-200">
+        <button className="md:hidden text-3xl m-2" onClick={() => setIsOpen(!isOpen)}>
+          ☰
+        </button>
+        <div className="flex flex-col items-center justify-between pb-3 text-4xl border-b-4 border-red-800 md:justify-between md:p-10">
+          <h1 className="text-2xl md:font-thin md:text-4xl">
             Markus Christensen
           </h1>
+
           <h2 className="block md:hidden text-sm p-3">
             Sångare - Skådespelare - Musiker
           </h2>
-          <div className="flex flex-row flex-wrap text-base gap-5 md:pt-3">
+
+          <div className="hidden md:flex flex-row flex-wrap text-base gap-5 md:pt-3">
             <Link
               className="transition-all duration-300 hover:text-black hover:-translate-y-1"
               to="/"
@@ -43,6 +51,41 @@ export default function Layout() {
               KONTAKT
             </Link>
           </div>
+
+          {isOpen && (
+            <div className="flex flex-row text-base gap-5 md:pt-3">
+              <Link
+                className="transition-all duration-300 hover:text-black hover:-translate-y-1"
+                to="/"
+              >
+                HEM
+              </Link>
+              <Link
+                className="transition-all duration-300 hover:text-black hover:-translate-y-1"
+                to="/about"
+              >
+                OM MIG
+              </Link>
+              <Link
+                className="transition-all duration-300 hover:text-black hover:-translate-y-1"
+                to="/work"
+              >
+                CV
+              </Link>
+              <Link
+                className="transition-all duration-300 hover:text-black hover:-translate-y-1"
+                to="/gallery"
+              >
+                MEDIA
+              </Link>
+              <Link
+                className="transition-all duration-300 hover:text-black hover:-translate-y-1"
+                to="/contact"
+              >
+                KONTAKT
+              </Link>
+            </div>
+          )}
         </div>
       </header>
 
