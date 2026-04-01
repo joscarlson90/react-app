@@ -6,7 +6,7 @@ export default function Layout() {
 
   return (
     <div className="min-h-screen flex flex-col font-(family-name:<Quicksand>)">
-      <header className="font-thin z-10 bg-stone-200">
+      <header className="font-thin z-10 bg-stone-200 relative">
         <button className="md:hidden text-3xl m-2" onClick={() => setIsOpen(!isOpen)}>
           ☰
         </button>
