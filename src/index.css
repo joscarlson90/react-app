@@ -1,7 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+@import "tailwindcss";
 
-html, body, #root {
-  font-family: "Quicksand", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+html,
+body,
+#root {
+  font-family:
+    "Quicksand",
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-weight: 100;
   min-height: 100%;
 }

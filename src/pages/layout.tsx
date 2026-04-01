@@ -1,15 +1,25 @@
+import { useState } from "react";
 import { Link, Outlet } from "react-router";
 
 export default function Layout() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="min-h-screen flex flex-col font-(family-name:<Quicksand>)">
-      <header className="font-thin z-10 relative">
-        <div className="flex flex-col items-center justify-between text-4xl p-5 pl-10 border-b-3 border-red-800 bg-stone-200 md:justify-between">
-          <h1 className="text">Markus Christensen</h1>
-          <h2 className="block md:hidden text-lg p-3">
+      <header className="font-thin z-10 bg-stone-200 relative">
+        <button className="md:hidden text-3xl m-2" onClick={() => setIsOpen(!isOpen)}>
+          ☰
+        </button>
+        <div className="flex flex-col items-center justify-between pb-3 text-4xl border-b-4 border-red-800 md:justify-between md:p-10">
+          <h1 className="text-2xl md:font-thin md:text-4xl">
+            Markus Christensen
+          </h1>
+
+          <h2 className="block md:hidden text-sm p-3">
             Sångare - Skådespelare - Musiker
           </h2>
-          <div className="flex flex-row flex-wrap text-base gap-5 md:pt-3">
+
+          <div className="hidden md:flex flex-row flex-wrap text-base gap-5 md:pt-3">
             <Link
               className="transition-all duration-300 hover:text-black hover:-translate-y-1"
               to="/"
@@ -41,15 +51,50 @@ export default function Layout() {
               KONTAKT
             </Link>
           </div>
+
+          {isOpen && (
+            <div className="flex flex-row text-base gap-5 md:pt-3">
+              <Link
+                className="transition-all duration-300 hover:text-black hover:-translate-y-1"
+                to="/"
+              >
+                HEM
+              </Link>
+              <Link
+                className="transition-all duration-300 hover:text-black hover:-translate-y-1"
+                to="/about"
+              >
+                OM MIG
+              </Link>
+              <Link
+                className="transition-all duration-300 hover:text-black hover:-translate-y-1"
+                to="/work"
+              >
+                CV
+              </Link>
+              <Link
+                className="transition-all duration-300 hover:text-black hover:-translate-y-1"
+                to="/gallery"
+              >
+                MEDIA
+              </Link>
+              <Link
+                className="transition-all duration-300 hover:text-black hover:-translate-y-1"
+                to="/contact"
+              >
+                KONTAKT
+              </Link>
+            </div>
+          )}
         </div>
       </header>
 
-      <main className="flex-1 flex items-center justify-center">
+      <main className="flex flex-col flex-1 w-full">
         <Outlet />
       </main>
 
       <footer className="font-thin">
-        <div className="flex flex-col items-center justify-center h-30 text-sm gap-5 p-5 border-t-3 border-red-800 bg-stone-200">
+        <div className="flex flex-col items-center justify-center h-30 text-sm gap-2 border-t-4 border-red-800 bg-stone-200">
           <div className="text-center">© 2026 Markus Christensen</div>
           <div className="flex justify-center">
             <a href="https://www.instagram.com/mackisen?igsh=OGQ1NXI5ZGR6NTlm">
@@ -85,6 +130,9 @@ export default function Layout() {
                 />
               </svg>
             </a>
+          </div>
+          <div className="text-center italic text-xs">
+            Design by Josefine Carlson
           </div>
         </div>
       </footer>
