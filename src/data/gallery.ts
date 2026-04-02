@@ -1,5 +1,6 @@
 import borje from "../assets/borjefilm.jpg";
 import grandhotel from "../assets/grandhotel.webp";
+import grandhotel2 from "../assets/grandhotel2.jpg";
 import hero from "../assets/hero.png";
 import ikea2 from "../assets/ikea2.png";
 import ikea3 from "../assets/ikea3.png";
@@ -28,9 +29,24 @@ export const stageImages = {
     inGallery: true,
   },
   hero: { id: 2, src: hero, description: "Porträtt", inGallery: false },
-  ikea2: { id: 3, src: ikea2, description: "Ingvar, en musikalisk möbelsaga", inGallery: true },
-  ikea3: { id: 4, src: ikea3, description: "Ingvar, en musikalisk möbelsaga", inGallery: true },
-  karlek: { id: 5, src: karlek, description: "Kärlek skonar ingen", inGallery: true },
+  ikea2: {
+    id: 3,
+    src: ikea2,
+    description: "Ingvar, en musikalisk möbelsaga",
+    inGallery: true,
+  },
+  ikea3: {
+    id: 4,
+    src: ikea3,
+    description: "Ingvar, en musikalisk möbelsaga",
+    inGallery: true,
+  },
+  karlek: {
+    id: 5,
+    src: karlek,
+    description: "Kärlek skonar ingen",
+    inGallery: true,
+  },
   lejonhjarta: {
     id: 6,
     src: lejonhjarta,
@@ -43,8 +59,18 @@ export const stageImages = {
   svala: { id: 10, src: svala, description: "Tummelisa", inGallery: true },
   young: { id: 11, src: young, description: "Markus 5år", inGallery: false },
   malmo: { id: 12, src: malmo, description: "Miss Saigon", inGallery: true },
-  zjivago: { id: 13, src: zjivago, description: "Dr Zjivago", inGallery: false },
-  rotten: { id: 14, src: rotten, description: "Something Rotten", inGallery: true },
+  zjivago: {
+    id: 13,
+    src: zjivago,
+    description: "Dr Zjivago",
+    inGallery: false,
+  },
+  rotten: {
+    id: 14,
+    src: rotten,
+    description: "Something Rotten",
+    inGallery: true,
+  },
   oliver: { id: 15, src: oliver, description: "Oliver!", inGallery: true },
   tummelisa: {
     id: 16,
@@ -70,6 +96,22 @@ export const stageImages = {
     description: "Something Rotten",
     inGallery: true,
   },
-  loveyou: { id: 20, src: loveyou, description: "Tills döden skiljer oss åt", inGallery: true },
-  borje: { id: 21, src: borje, description: "Börje, The Journey of a Legend", inGallery: true },
+  loveyou: {
+    id: 20,
+    src: loveyou,
+    description: "Tills döden skiljer oss åt",
+    inGallery: true,
+  },
+  borje: {
+    id: 21,
+    src: borje,
+    description: "Börje, The Journey of a Legend",
+    inGallery: true,
+  },
+  grandhotel2: {
+    id: 22,
+    src: grandhotel2,
+    description: "Det var en gång på Grand Hotel",
+    inGallery: true,
+  },
 };
