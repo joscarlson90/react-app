@@ -4,25 +4,28 @@ export default function Work() {
   const work = workData;
 
   return (
-    <div className="px-6 py-10">
-      <p className="text-xl ml-10 mt-10">SCEN</p>
-
+    <div className="px-8">
+      <h3 className="text-2xl ml-10 mt-10 font-thin">SCEN/TV/FILM</h3>
       <div className="flex flex-col">
         {work.map((item) => (
-          <div className="grid grid-cols-3 my-6 ml-10 font-thin" key={item.id}>
-            <p className="text-2xl">{item.year}</p>
-            <div className="flex flex-col">
-              <p className="text-3xl mb-3">{item.workplace}</p>
-              <p className="mb-3">{item.name}</p>
-              <p className="">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
-                maxime ullam quasi ipsum facilis provident, praesentium
-                doloremque modi asperiores? A, est? Suscipit, dolor fuga ipsum
-                omnis at velit culpa vel?
+          <div
+            className="grid grid-cols-1 m-6 font-thin md:grid-cols-3 md:gap-2"
+            key={item.id}
+          >
+            <p className="md:text-xl italic">{item.year}</p>
+            <div className="flex flex-col align-center w-auto">
+              <p className="font-semibold mb-3 md:text-xl">
+                {item.name} | {item.workplace}
               </p>
+              <p className="hidden md:block">{item.about}</p>
             </div>
-            <div className="">
-              <img className="w-80" src={item.imageUrl} alt={item.name} />
+
+            <div className="md:flex md:items-start md:justify-end rounded-md overflow-hidden">
+              <img
+                className="w-full h-auto object-contain rounded-md"
+                src={item.imageUrl}
+                alt={item.name}
+              />
             </div>
           </div>
         ))}
