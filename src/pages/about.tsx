@@ -32,7 +32,6 @@ export default function About() {
             className="rounded-md md:ml-6 m-2 w-full max-w-[300px] md:max-w-[400px] h-auto"
           />
         </p>
-        {/* <p className="h-auto w-auto md:w-1/2 lg:w-2/5 md:ml-auto"></p> */}
       </section>
     </main>
   );
